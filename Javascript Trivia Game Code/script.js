@@ -1,4 +1,21 @@
 // Questions Array with Explanations
+window.onbeforeunload = function() {
+  localStorage.clear();
+};
+
+let timeElapsed = 0; // Initialize time elapsed in seconds
+const timerDisplay = document.getElementById('timer');
+
+const timer = setInterval(() => {
+    timeElapsed++; // Increment time elapsed by 1 second
+    timerDisplay.textContent = timeElapsed; // Display time elapsed
+    const minutes = Math.floor(timeElapsed / 60); // Calculate minutes
+    const seconds = timeElapsed % 60; // Calculate remaining seconds
+
+    // Format the time to display two digits for seconds
+    timerDisplay.innerHTML = `Time Elapsed: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}, 1000);
+
 const questions = [
   {
     question: "Which is NOT a comparison operator?",
@@ -145,6 +162,78 @@ const questions = [
       explanation: "The onmousemove event triggers every time the mouse pointer is moved over the div element."
   },
 
+  {
+    question: "What method is used to add a new node to an element as the last node?",
+    answers: { a: "cloneNode()", b: "replaceChild()", c: "insertAfter()", d: "appendChild()" },
+    correct: "d",
+    explanation: "appendChild() adds a new child node to an element as the last child node."
+  },
+  {
+    question: "Which of the following is not a valid JavaScript math object method?",
+    answers: { a: "abs(x)", b: "min(x,y,z)", c: "add(x,y)", d: "cos(x)" },
+    correct: "c",
+    explanation: "Add() is not a method. We simply use the '+' to add two variables in JavaScript."
+  },
+  {
+    question: "How do we add a new element to the beginning of an array?",
+    answers: { a: "pop()", b: "unshift()", c: "push()", d: "splice()" },
+    correct: "b",
+    explanation: "unshift() is the only option that specifically adds an element to the beginning of the array."
+  },
+  {
+    question: "What type of value does a 'confirm()' function return?",
+    answers: { a: "String", b: "Object", c: "Boolean", d: "Number" },
+    correct: "c",
+    explanation: "The 'confirm()' function opens up a yes/no dialog and returns true/false depending on user click."
+  },
+  {
+    question: "What does the modulus (%) operator do?",
+    answers: { a: "Divides two values", b: "Returns a percentage", c: "Gives a fraction value", d: "Returns a reaminder" },
+    correct: "d",
+    explanation: "The modulus returns the remainder between two numbers."
+  },
+  {
+    question: "What is not true about the variable 'const'?",
+    answers: { a: "It cannot be reassinged.", b: "It is accessible by the entire code.", c: "It can be used multiple times.", d: "It can be set to anything." },
+    correct: "b",
+    explanation: "The variable 'const' is only accessible after they appear in the code."
+  },
+  {
+    question: "What does the NaN stand for?",
+    answers: { a: "Not-a-Number", b: "Not-a-Negative", c: "Not-a-Null", d: "Not-a-Node" },
+    correct: "a",
+    explanation: "NaN stands for Not-a-Number value."
+  },
+  {
+    question: "Given the following code, what number represents the month? Date(2021, 11, 5, 8, 4, 12, 10, 0)",
+    answers: { a: "11", b: "8", c: "5", d: "12" },
+    correct: "a",
+    explanation: "Date objects are read left to right with the numbers representing the year, month, day, hour, minutes, seconds, and milliseconds respectively. You can omit anything you want except for year and month."
+  },
+  {
+    question: "Which of the following is not a node property?",
+    answers: { a: "firstChild", b: "previousSibling", c: "motherNode", d: "nodeName" },
+    correct: "c",
+    explanation: "The origin name of the nodes in which children nodes fall under is named parentNode."
+  },
+  {
+    question: "Which of the following is used to set a stricy equality?",
+    answers: { a: "=", b: "===", c: "!=", d: "==" },
+    correct: "b",
+    explanation: "In JavaScript, there are only two strict comparison operators: '===' and '!=='."
+  },
+  {
+    question: "What is the correct way to write a multi-line JavaScript comment?",
+    answers: { a: "/*...*/", b: "//", c: "/.../", d: "/$.../$" },
+    correct: "a",
+    explanation: "In order to make a multi-line comment, we have to place our content in between '/*' and '*/, Otherwise it will remain in the code as is."
+  },
+  {
+    question: "Given the array: let arr = [Peter, Paul, Mary, Clair, Axel]; What is 'Mary' indexed at?",
+    answers: { a: "4", b: "3", c: "1", d: "2" },
+    correct: "d",
+    explanation: "Arrays are indexed at 0; therefore, 'Mary' would be indexed at 2."
+  },
   
 
 
