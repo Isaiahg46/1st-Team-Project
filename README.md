@@ -6,6 +6,7 @@
 - To get started all you need is the URL to access the page.
 - The basic functions of the game are the ability to choose between any of the multiple answers to finds the one which correctly answers the question.
 ## Documentation: Links to relevant documentation, such as user- and team-facing documentation 
+- link to Slideshow Presentation?
 ## Contribution guidelines: Who maintains and contributes to the project 
 ### Contributions 
 - Brandy
