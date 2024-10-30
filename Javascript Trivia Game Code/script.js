@@ -244,11 +244,13 @@ const questions = [
 let shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 let currentQuestionIndex = 0;
 let score = parseInt(localStorage.getItem("score")) || 0;
+let hasScored = false;
 
 const questionText = document.getElementById("question-text");
 const answersContainer = document.getElementById("answers");
 const nextButton = document.getElementById("next-question");
 const scoreDisplay = document.getElementById("score-display");
+
 
 loadQuestion();
 
@@ -272,28 +274,37 @@ function loadQuestion() {
 function handleAnswer(selectedAnswer) {
   const question = shuffledQuestions[currentQuestionIndex];
   const explanation = document.createElement("p");
-  explanation.classList.add("mt-3", "alert", "alert-info");
+  explanation.classList.add("mt-3", "alert", "alert-info", "message-explanation");
 
   if (selectedAnswer === question.correct) {
-    score++;
+    if (!hasScored) {
+      score++;
+      hasScored = true;
+    }
     localStorage.setItem("score", score);
     explanation.textContent = `Correct! ${question.explanation}`;
   } else {
     explanation.textContent = `Incorrect. The correct answer is ${question.correct.toUpperCase()}: ${question.answers[question.correct]}. ${question.explanation}`;
   }
-
+  const elements= document.getElementsByClassName("message-explanation")
+  if (elements.length > 0) {
+    elements[0].remove();
+  }
   answersContainer.appendChild(explanation);
   nextButton.classList.remove("hidden");
 }
 
 nextButton.onclick = () => {
   currentQuestionIndex++;
+  hasScored = false;
   if (currentQuestionIndex < shuffledQuestions.length) {
     loadQuestion();
+    
   } else {
     alert("Game Over! Restarting...");
     currentQuestionIndex = 0;
     loadQuestion();
+    
   }
 };
 
