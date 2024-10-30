@@ -1,4 +1,5 @@
  ## Project information: The project's title, description, and purpose 
+### JavaScript Trivia Game
  ## Getting started: How users can get started with the project, including installation and usage instructions 
 ## Documentation: Links to relevant documentation, such as user- and team-facing documentation 
 ## Contribution guidelines: Who maintains and contributes to the project 
