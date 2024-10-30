@@ -16,9 +16,14 @@
 MIT License?
 ## Contact details: Where users can get help with the project 
 Emails?
+Git Hub links?
 ## Roadmap: A list of ideas for future releases 
 ### Roadmap
 - Input error messages explaining why each incorrect answer is choses as opposed to why the right answer is right.
+- More Questions.
+- Trivia regarding other languages.
+- end of game report with more in depth breakdown.
 - more?
 ## Badges: A section that can include badges that link to important tools and show stats about the project 
 ## Screenshots: A folder or links to images from other sources 
+   
