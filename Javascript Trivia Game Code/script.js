@@ -89,7 +89,7 @@ const questions = [
       correct: "b",
       explanation: {
         a: "Reason 1",
-        b: "The alert() functions will display any designated message placed b etween the parenthesis in an alert dialog box when it's executed.",
+        b: "The alert() functions will display any designated message placed between the parenthesis in an alert dialog box when it's executed.",
         c: "Reason 3",
         d: "Reason 4"
       }
@@ -134,7 +134,7 @@ const questions = [
       explanation: {
         a: "Reason 1",
         b: "Reason 2",
-        c: "The prompt() function allows you to display a input box prompting input form the user.",
+        c: "The prompt() function allows you to display an input box prompting input from the user.",
         d: "Reason 4"
       }
   },
@@ -168,7 +168,7 @@ const questions = [
         a: "Reason 1",
         b: "Reason 2",
         c: "Reason 3",
-        d: "Similar to the onclick function, this executes a given functionality when given button is double clicked."
+        d: "Similar to the onclick function, this executes a given functionality when the button is double clicked."
       }
   },
   {
@@ -178,7 +178,7 @@ const questions = [
       explanation: {
         a: "Reason 1",
         b: "Reason 2",
-        c: "This allows for a context menu to be displayed when rihgt clicking on desgnated elements.",
+        c: "This allows for a context menu to be displayed when right clicking on designated elements.",
         d: "Reason 4"
       }
   },
@@ -334,7 +334,7 @@ const questions = [
   },
   {
     question: "What is not true about the variable 'const'?",
-    answers: { a: "It cannot be reassinged.", b: "It is accessible by the entire code.", c: "It can be used multiple times.", d: "It can be set to anything." },
+    answers: { a: "It cannot be reassigned.", b: "It is accessible by the entire code.", c: "It can be used multiple times.", d: "It can be set to anything." },
     correct: "b",
     explanation: {
       a: "Reason 1",
