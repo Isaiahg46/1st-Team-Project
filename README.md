@@ -20,7 +20,7 @@ MIT License?
 - isaiahg46@gmail.com
 - onurculhaci@gmail.com
 - Adam.Liberman32@gmail.com
-https://github.com/Isaiahg46/1st-Team-Project
+- https://github.com/Isaiahg46/1st-Team-Project
 ## Roadmap: A list of ideas for future releases 
 ### Roadmap
 - Input error messages explaining why each incorrect answer is wrong as opposed to why the right answer is right.
