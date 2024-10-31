@@ -14,7 +14,7 @@
 - Onur Culhaci
 - Adam Liberman
 ## License information: Information about the license use or a link to the LICENSE file 
-MIT License?
+MIT License
 ## Contact details: Where users can get help with the project 
 - brandypeters@aol.com
 - isaiahg46@gmail.com
