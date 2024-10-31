@@ -6,9 +6,9 @@
 - To get started all you need is the URL to access the page.
 - The basic functions of the game are the ability to choose between any of the multiple answers to finds the one which correctly answers the question.
 ## Documentation: Links to relevant documentation, such as user- and team-facing documentation 
-- link to Slideshow Presentation?
+- https://docs.google.com/presentation/d/1XQovvAUd-sCGk2C3ippV3nQAkHfGJUQJ25QLcAs8ZiY/edit?usp=sharing
 ## Contribution guidelines: Who maintains and contributes to the project 
-### Contributions 
+### Contributors 
 - Brandy Peters
 - Isaiah Gonazales
 - Onur Culhaci
@@ -16,15 +16,17 @@
 ## License information: Information about the license use or a link to the LICENSE file 
 MIT License?
 ## Contact details: Where users can get help with the project 
-Emails?
-Git Hub links?
+- brandypeters@aol.com
+- isaiahg46@gmail.com
+- onurculhaci@gmail.com
+- Adam.Liberman32@gmail.com
+https://github.com/Isaiahg46/1st-Team-Project
 ## Roadmap: A list of ideas for future releases 
 ### Roadmap
-- Input error messages explaining why each incorrect answer is choses as opposed to why the right answer is right.
+- Input error messages explaining why each incorrect answer is wrong as opposed to why the right answer is right.
 - More Questions.
 - Trivia regarding other languages.
 - end of game report with more in depth breakdown.
-- more?
-## Badges: A section that can include badges that link to important tools and show stats about the project 
+- more? 
 ## Screenshots: A folder or links to images from other sources 
    
