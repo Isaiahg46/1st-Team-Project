@@ -9,7 +9,7 @@
 - link to Slideshow Presentation?
 ## Contribution guidelines: Who maintains and contributes to the project 
 ### Contributions 
-- Brandy
+- Brandy Peters
 - Isaiah Gonazales
 - Onur Culhaci
 - Adam Liberman
