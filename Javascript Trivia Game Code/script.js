@@ -377,7 +377,7 @@ const questions = [
     }
   },
   {
-    question: "Which of the following is used to set a stricy equality?",
+    question: "Which of the following is used to set a strict equality?",
     answers: { a: "=", b: "===", c: "!=", d: "==" },
     correct: "b",
     explanation: {
