@@ -1,6 +1,6 @@
 ## Project information: The project's title, description, and purpose 
 ### JavaScript Trivia Game
--This project is a short multiple choice trivia game with the purpose of gamifying the practice of many key functions, terms, and ideas used in jvascript
+-This project is a short multiple choice trivia game with the purpose of gamifying the practice of many key functions, terms, and ideas used in javascript.
 ## Getting started: How users can get started with the project, including installation and usage instructions
 ### Getting started
 - To get started all you need is the URL to access the page.
