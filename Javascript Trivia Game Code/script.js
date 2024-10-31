@@ -155,7 +155,7 @@ const questions = [
       correct: "b",
       explanation: {
         a: "Reason 1",
-        b: "The onclick executes a given functionality when the designated buttin is clicked.",
+        b: "The onclick executes a given functionality when the designated button is clicked.",
         c: "Reason 3",
         d: "Reason 4"
       }
