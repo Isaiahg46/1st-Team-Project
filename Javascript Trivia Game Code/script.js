@@ -211,7 +211,7 @@ const questions = [
       correct: "b",
       explanation: {
         a: "Reason 1",
-        b: "Reason 2",
+        b: "The onkeydown event occurs when the user presses a key on the keyboard.",
         c: "Reason 3",
         d: "Reason 4"
       }
