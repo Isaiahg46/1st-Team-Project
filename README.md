@@ -27,6 +27,5 @@ MIT License
 - More Questions.
 - Trivia regarding other languages.
 - end of game report with more in depth breakdown.
-- more? 
 ## Screenshots: A folder or links to images from other sources 
    
