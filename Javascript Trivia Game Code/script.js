@@ -77,7 +77,7 @@ const questions = [
       answers: { a: "console.log", b: "alert", c: "confirm", d: "function" },
       correct: "a",
       explanation: {
-        a: "console.log writes information to the browser console.",
+        a: "Console.log writes information to the browser console.",
         b: "Reason 2",
         c: "Reason 3",
         d: "Reason 4"
@@ -285,7 +285,7 @@ const questions = [
       a: "Reason 1",
       b: "Reason 2",
       c: "Reason 3",
-      d: "appendChild() adds a new child node to an element as the last child node."
+      d: "AppendChild() adds a new child node to an element as the last child node."
     }
   },
   {
@@ -305,7 +305,7 @@ const questions = [
     correct: "b",
     explanation: {
       a: "Reason 1",
-      b: "unshift() is the only option that specifically adds an element to the beginning of the array.",
+      b: "Unshift() is the only option that specifically adds an element to the beginning of the array.",
       c: "Reason 3",
       d: "Reason 4"
     }
