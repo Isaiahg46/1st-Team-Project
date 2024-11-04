@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Game</title>
+
+  <!-- Bootstrap CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Custom CSS Styles -->
+  <style>
+
+    h1 {
+      text-align: center;
+      color: #b30000;
+      font-size: 75px;
+    }
+
+    body {
+      background-color: #f0f8ff; /* Light blue background */
+    }
+
+    .container {
+      margin-top: 50px;
+      max-width: 600px;
+    }
+
+    .card {
+      border: 2px solid #007bff; /* Blue border */
+      border-radius: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #question-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #0056b3; /* Darker blue */
+
+    }
+
+    .list-group-item {
+      border: 1px solid #17a2b8; /* Teal border */
+      margin-bottom: 0px;
+      transition: background-color 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      background-color: #e0f7fa; /* Light teal hover */
+      cursor: pointer;
+    }
+
+    #next-question {
+      margin-top: 15px;
+    }
+
+    .modal-content {
+      background-color: #e3f2fd; /* Light blue background */
+      border-radius: 10px;
+      border: 2px solid #42a5f5; /* Blue border */
+    }
+
+    .btn {
+      margin: 5px;
+    }
+
+    #timer {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0056b3; 
+    }
+
+    #startButton {
+      background-color:#e3f2fd;
+      font-size: 5rem;
+      border-radius: 30px;
+      border: 2px solid #04ffde;
+      color: #04f7ff;
+    }
+
+    .centered {
+      text-align: center;
+    }
+  
+    </style>
+</head>
+<body>
+
+  <h1 id="myHeader"> Welcome to the JavaScript Trivia Game!</h1>
+
+  <div class="centered">
+  <button id="startButton" >Start Trivia Game</button>
+</div>
+    
+
+  <div class="container d-none">
+    <div id="timer" class="text-center">Time Elapsed: 0:00</div>
+    <h2 class="text-center text-primary mb-4">JavaScript Trivia Game</h2>
+    <p class="text-center text-secondary">Select the correct answer!</p>
+
+    <!-- Progress Bar -->
+  <div class="progress mb-4">
+    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+    <div id="question-container" class="card p-4">
+      <h3 id="question-text"></h3>
+      <div id="answers" class="list-group"></div>
+    </div>
+
+    <div class="text-center">
+      <button id="next-question" class="btn btn-outline-primary hidden">Next Question</button>
+    </div>
+
+    <div class="text-center mt-4">
+      <button id="show-score" class="btn btn-outline-success">Show Score</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modal for score -->
+  <div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="scoreModalLabel">Your Score</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Your current score is: <span id="score-display"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        // Hide the start button
+        this.style.display = 'none';
+    });
+</script>
+
+<script>
+  document.getElementById('startButton').addEventListener('click', function() {
+      document.getElementById('myHeader').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
